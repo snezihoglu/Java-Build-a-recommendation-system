@@ -27,7 +27,7 @@ I designed and wrote classes to implement a recommendation engine that makes rec
 
 ### Let me give you a detailed description about what I did
 
-So basically I devided my project into four parts:
+So basically I devided my project into five parts:
 
 #### First Step
 
@@ -281,3 +281,13 @@ Creatde a new class named MovieRunnerWithFilters that I used to find the average
 - In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByYearAfterAndGenre that creates an AllFilters object that includes criteria based on movies that came out in a specified year or later and have a specified genre as one of its genres. This method calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and the two criteria based on year and genre. Prints the number of movies found, and for each movie, prints its rating, its year, and its title on one line, and all its genres on the next line.
 
 - In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByDirectorsAndMinutes that creates an AllFilters object that includes criteria based on running time and directors. This method calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and the two criteria based on minutes and directors. Prints the number of movies found, and for each movie, prints its rating, its time length, and its title on one line, and all its directors on the next line.
+
+#### Fourth Steps
+
+In this part of the capstone project I added a new kind of recommendation that helps me make recommendations better than using simple averages.
+
+For this assignment I created one class RaterDatabase. This class contains: A HashMap named ourRaters that maps a rater ID String to a Rater object that includes all the movie ratings made by this rater. A public static initialize method with one String parameter named filename. A private initialize method with no parameters that initializes the HashMap ourRaters if it does not exist. A public static void addRatings method that has one String parameter named filename. A public static void addRaterRating method that has three parameters, a String named raterID representing a rater ID, a String named movieID that represents a movie ID, and a double named rating that is the rating the rater raterID has given to the movie movieID.  A method getRater has one String parameter named id. This method returns a Rater that has this ID. A method getRaters that has no parameters. This method returns an ArrayList of Raters from the database. A method size that has no parameters. This method returns the number of raters in the database.
+
+Specifically for this assignment I did the following: Created a new class named FourthRatings. Created a new class named MovieRunnerSimilarRatings. Here I copied the two methods printAverageRatings and printAverageRatingsByYearAfterAndGenre from MovieRunnerWithFilters to this new class and modified them to work with a FourthRatings object instead of a ThirdRatings object.
+- Write the private helper method named dotProduct, which has two parameters, a Rater named me and a Rater named r. This method should first translate a rating from the scale 0 to 10 to the scale -5 to 5 and return the dot product of the ratings of movies that they both rated. This method will be called by getSimilarities.
+
