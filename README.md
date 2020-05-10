@@ -1,5 +1,18 @@
 # Java-Build-a-recommendation-system
 
+### Title of the project
+
+*Movie Recommendation system*
+
+**Aim of the project:** To build a system that recommends movies according to their ratings, view time or user's interest.
+
+
+**Contact Person:** Selma Nezihoglu
+
+0707725414
+
+snezihoglu@gmail.com
+
 ## Description
 
 It is the project of Coursera's Java programming "Build a recommendation system" course.
