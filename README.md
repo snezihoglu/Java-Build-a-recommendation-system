@@ -315,4 +315,3 @@ This file should include ***FourthRatings***, ***RecommendationRunner***, any ot
 ## Example of an input:
 
 ![](Images/Output.png)
-
