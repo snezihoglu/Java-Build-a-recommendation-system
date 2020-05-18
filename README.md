@@ -27,6 +27,8 @@ I designed and wrote classes to implement a recommendation engine that makes rec
 
 ### Let me give you a detailed description about what I did
 
+#### This project contains 23 classes
+
 So basically I devided my project into five parts:
 
 #### First Step
