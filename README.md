@@ -63,20 +63,13 @@ The class Movie is a Plain Old Java Object (POJO) class for storing the data abo
 Eight private variables to represent information about a movie including:
 
 * id - a String variable representing the IMDB ID of the movie
-
 * title - a String variable for the movie’s title
-
 * year - an integer representing the year
-
 * genres - one String of one or more genres separated by commas
-
 * director - one String of one or more directors of the movie separated by commas
-
 * country - one String of one or more countries the film was made in, separated by commas
-
 * minutes - an integer for the length of the movie
-
-* poster - a String that is a link to an image of the movie poster if one exists, or “N/A” if no poster exists
+* poster - a String that is a link to an image of the movie poster if one exists, or “N/A” if no poster exists 
 
 A constructor with eight parameters to initialize the private variables.
 
@@ -129,24 +122,20 @@ This class includes a method named loadMovies that has one parameter, a String n
 
 Also a void method named testLoadMovies which does the ones listed below.
 
-  -Calls the method loadMovies on the file ratedmovies_short.csv and stores the result in an ArrayList local variable. Prints the number of movies, and prints each movie. 
-  -Adds code to determine how many movies include the Comedy genre. 
-  -Adds code to determine how many movies are greater than 150 minutes in length. 
-  -Adds code to determine the maximum number of movies by any director, and who the directors are that directed that many movies. 
+  1. Calls the method loadMovies on the file ratedmovies_short.csv and stores the result in an ArrayList local variable. Prints the number of movies, and prints each movie. 
+  1. Adds code to determine how many movies include the Comedy genre. 
+  1. Adds code to determine how many movies are greater than 150 minutes in length. 
+  1. Adds code to determine the maximum number of movies by any director, and who the directors are that directed that many movies. 
   
 In the FirstRatings class, there is a method named loadRaters that has one parameter named filename. This method processes every record from the CSV file whose name is filename, a file of raters and their ratings, and return an ArrayList of type Rater with all the rater data from the file.
 
  Void method named testLoadRaters does these:
 
-  -Calls the method loadRaters on the file ratings_short.csv and stores the result in a local ArrayList variable. Prints the total number of raters. Then for each rater, prints the rater’s ID and the number of ratings they did on one line, followed by each rating on a separate line. 
-  
-  -Adds code to find the number of ratings for a particular rater you specify in your code. 
-  
-  -Adds code to find the maximum number of ratings by any rater. Determines how many raters have this maximum number of ratings and who those raters are. 
-  
-  -Adds code to find the number of ratings a particular movie has. 
-  
-  -Adds code to determine how many different movies have been rated by all these raters. 
+  1. Calls the method loadRaters on the file ratings_short.csv and stores the result in a local ArrayList variable. Prints the total number of raters. Then for each rater, prints the rater’s ID and the number of ratings they did on one line, followed by each rating on a separate line. 
+  1. Adds code to find the number of ratings for a particular rater you specify in your code. 
+  1. Adds code to find the maximum number of ratings by any rater. Determines how many raters have this maximum number of ratings and who those raters are. 
+  1. Adds code to find the number of ratings a particular movie has. 
+  1. Adds code to determine how many different movies have been rated by all these raters. 
 
 #### Second Step
 
@@ -158,15 +147,11 @@ In this assignment I modified a new class named SecondRatings to do many of the 
 
 Specifically for this assignment I wrote the following classes and methods:
 
-  -This class includes two private variables, one named myMovies of type ArrayList of type Movie, and a second one named myRaters of type ArrayList of type Rater.
-  
-  -I wrote an additional SecondRatings constructor that has two String parameters named moviefile and ratingsfile. The constructor creates a FirstRatings object and then calls the loadMovies and loadRaters methods in FirstRatings to read in all the movie and ratings data and stores them in the two private ArrayList variables of the SecondRatings class, myMovies and myRaters.
-  
-  -In the SecondRatings class, I wrote a public method named getMovieSize, which returns the number of movies that were read in and stored in the ArrayList of type Movie.
-  
-  -In the SecondRatings class, I wrote a public method named getRaterSize, which returns the number of raters that were read in and stored in the ArrayList of type Rater.
-  
-  -I created a new class named MovieRunnerAverage. In this class, I created a void method named printAverageRatings that has no parameters. This method creates a SecondRatings object and uses the CSV filenames of movie information and ratings information from the first assignment when calling the constructor. Prints the number of movies and number of raters from the two files by calling the appropriate methods in the SecondRatings class. Tests my program to make sure it is reading in all the data from the two files. 
+  1. This class includes two private variables, one named myMovies of type ArrayList of type Movie, and a second one named myRaters of type ArrayList of type Rater.
+  1. I wrote an additional SecondRatings constructor that has two String parameters named moviefile and ratingsfile. The constructor creates a FirstRatings object and then calls the loadMovies and loadRaters methods in FirstRatings to read in all the movie and ratings data and stores them in the two private ArrayList variables of the SecondRatings class, myMovies and myRaters.
+  1. In the SecondRatings class, I wrote a public method named getMovieSize, which returns the number of movies that were read in and stored in the ArrayList of type Movie.
+  1. In the SecondRatings class, I wrote a public method named getRaterSize, which returns the number of raters that were read in and stored in the ArrayList of type Rater.
+  1. I created a new class named MovieRunnerAverage. In this class, I created a void method named printAverageRatings that has no parameters. This method creates a SecondRatings object and uses the CSV filenames of movie information and ratings information from the first assignment when calling the constructor. Prints the number of movies and number of raters from the two files by calling the appropriate methods in the SecondRatings class. Tests my program to make sure it is reading in all the data from the two files. 
 
 In the SecondRatings class, I wrote a private helper method named getAverageByID that has two parameters: a String named id representing a movie ID and an integer named minimalRaters. This method returns a double representing the average movie rating for this ID if there are at least minimalRaters ratings. If there are not minimalRaters ratings, then it returns 0.0.
 
@@ -200,29 +185,21 @@ I changed the name of the class Rater.java to PlainRater.java and created a new 
 
 I created a new class named EfficientRater, and copied the PlainRater class into this class. I made several changes to this class, including:
 
-- Changing the ArrayList of type Rating private variable to a HashMap<String,Rating>. The key in the HashMap is a movie ID, and its value is a rating associated with this movie.
-
-- Changing addRating to instead add a new Rating to the HashMap with the value associated with the movie ID String item as the key in the HashMap.
+  1. Changing the ArrayList of type Rating private variable to a HashMap<String,Rating>. The key in the HashMap is a movie ID, and its value is a rating associated with this movie.
+  1. Changing addRating to instead add a new Rating to the HashMap with the value associated with the movie ID String item as the key in the HashMap.
 
 Also changed FirstRatings to use EfficientRater instead of PlainRater. 
 
 In this part there is a class, MovieDatabase—This class is an efficient way to get information about movies. It stores movie information in a HashMap for fast lookup of movie information given a movie ID. The class also allows filtering movies based on queries. All methods and fields in the class are static. Thiswe are able to access methods in MovieDatabase without using new to create objects, but by calling methods like MovieDatabase.getMovie("0120915"). This class has the following parts:
 
-- A HashMap named ourMovies that maps a movie ID String to a Movie object with all the information about that movie.
-
-- A public initialize method with one String parameter named moviefile. 
-
-- A private initialize method with no parameters that will load the movie file ratedmoviesfull.csv if no file has been loaded. This method is called as a safety check with any of the other public methods to make sure there is movie data in the database.
-
-- A private loadMovies method to build the HashMap.
-
-- A containsID method with one String parameter named id. This method returns true if the id is a movie in the database, and false otherwise.
-
-- Several getter methods including getYear, getTitle, getMovie, getPoster, getMinutes, getCountry, getGenres, and getDirector. Each of these takes a movie ID as a parameter and returns information about that movie.
-
-- A size method that returns the number of movies in the database.
-
-- A filterBy method that has one Filter parameter named f. This method returns an ArrayList of type String of movie IDs that match the filtering criteria.
+  1. A HashMap named ourMovies that maps a movie ID String to a Movie object with all the information about that movie.
+  1. A public initialize method with one String parameter named moviefile. 
+  1. A private initialize method with no parameters that will load the movie file ratedmoviesfull.csv if no file has been loaded. This method is called as a safety check with any of the other public methods to make sure there is movie data in the database.
+  1. A private loadMovies method to build the HashMap.
+  1. A containsID method with one String parameter named id. This method returns true if the id is a movie in the database, and false otherwise.
+  1. Several getter methods including getYear, getTitle, getMovie, getPoster, getMinutes, getCountry, getGenres, and getDirector. Each of these takes a movie ID as a parameter and returns information about that movie.
+  1. A size method that returns the number of movies in the database.
+  1. A filterBy method that has one Filter parameter named f. This method returns an ArrayList of type String of movie IDs that match the filtering criteria.
 
 The interface Filter has only one signature for the method satisfies. Any filters that implement this interface also has this method. The method satisfies has one String parameter named id representing a movie ID. This method returns true if the movie satisfies the criteria in the method and returns false otherwise.
 
@@ -232,11 +209,9 @@ The class YearsAfterFilter is a filter for a specified year; it selects only tho
 
 The class AllFilters combines several filters. This class has the following:
 
-- A private variable named filters that is an ArrayList of type Filter.
-
-- An addFilter method that has one parameter named f of type Filter. This method allows one to add a Filter to the ArrayList filters.
-
-- A satisfies method that has one parameter named id representing a movie ID. This method returns true if the movie satisfies the criteria of all the filters in the filters ArrayList. Otherwise this method returns false.
+  1. A private variable named filters that is an ArrayList of type Filter.
+  1. An addFilter method that has one parameter named f of type Filter. This method allows one to add a Filter to the ArrayList filters.
+  1. A satisfies method that has one parameter named id representing a movie ID. This method returns true if the movie satisfies the criteria of all the filters in the filters ArrayList. Otherwise this method returns false.
 
 I created a new class MovieDatabase, which uses a HashMap to store movie information so that looking up that information is more efficient. This part also filters movies based on several criteria to narrow down search results. I created some new Filters as described below.
 
@@ -250,37 +225,23 @@ Then for each movie ID in the ArrayList movies, I calculated its averageRating a
 
 Creatde a new class named MovieRunnerWithFilters that I used to find the average rating of movies using different filters. I copied the printAverageRatings method from the MovieRunnerAverage class into this class and made several changes:
 
-- Instead of creating a SecondRatings object, I created a ThirdRatings object. This only has one parameter, the name of a file with ratings data.
+  1. Instead of creating a SecondRatings object, I created a ThirdRatings object. This only has one parameter, the name of a file with ratings data.
+  1. Prints the number of raters after creating a ThirdsRating object.
+  1. Calls the MovieDatabase initialize method with the moviefile to set up the movie database.
+  1. Prints the number of movies in the database.
+  1. Calls getAverageRatings with a minimal number of raters to return an ArrayList of type Rating.
+  1. Prints out how many movies with ratings are returned, then sort them, and print out the rating and title of each movie.
 
-- Prints the number of raters after creating a ThirdsRating object.
-
-- Calls the MovieDatabase initialize method with the moviefile to set up the movie database.
-
-- Prints the number of movies in the database.
-
-- Calls getAverageRatings with a minimal number of raters to return an ArrayList of type Rating.
-
-- Prints out how many movies with ratings are returned, then sort them, and print out the rating and title of each movie.
-
-- In the ThirdRatings class, I wrote a public helper method named getAverageRatingsByFilter that has two parameters, an int named minimalRaters for the minimum number of ratings a movie must have and a Filter named filterCriteria. This method creates and returns an ArrayList of type Rating of all the movies that have at least minimalRaters ratings and satisfies the filter criteria. This method creates the ArrayList of type String of movie IDs from the MovieDatabase using the filterBy method before calculating those averages.
-
-- In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByYear that is similar to printAverageRatings, but also creates a YearAfterFilter and calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and came out in a specified year or later. Prints the number of movies found, and for each movie found, prints its rating, its year, and its title. 
-
-- I created a new class named GenreFilter that implements Filter. The constructor has one parameter named genre representing one genre, and the satisfies method returns true if a movie has this genre.
-
-- In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByGenre that creates a GenreFilter and call getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and include a specified genre. Prints the number of movies found, and for each movie, prints its rating and its title on one line, and its genres on the next line.
-
-- I created a new class named MinutesFilter that implements Filter. Its satisfies method returns true if a movie’s running time is at least min minutes and no more than max minutes.
-
-- In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByMinutes that creates a MinutesFilter and calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and their running time is at least a minimum number of minutes and no more than a maximum number of minutes. Prints the number of movies found, and for each movie print its rating, its running time, and its title on one line. 
-
-- I created a new class named DirectorsFilter that implements Filter. The constructor has one parameter named directors representing a list of directors separated by commas.
-
-- In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByDirectors that creates a DirectorsFilter and calsl getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and include at least one of the directors specified. Prints the number of movies found, and for each movie prints its rating and its title on one line, and all its directors on the next line.
-
-- In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByYearAfterAndGenre that creates an AllFilters object that includes criteria based on movies that came out in a specified year or later and have a specified genre as one of its genres. This method calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and the two criteria based on year and genre. Prints the number of movies found, and for each movie, prints its rating, its year, and its title on one line, and all its genres on the next line.
-
-- In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByDirectorsAndMinutes that creates an AllFilters object that includes criteria based on running time and directors. This method calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and the two criteria based on minutes and directors. Prints the number of movies found, and for each movie, prints its rating, its time length, and its title on one line, and all its directors on the next line.
+* In the ThirdRatings class, I wrote a public helper method named getAverageRatingsByFilter that has two parameters, an int named minimalRaters for the minimum number of ratings a movie must have and a Filter named filterCriteria. This method creates and returns an ArrayList of type Rating of all the movies that have at least minimalRaters ratings and satisfies the filter criteria. This method creates the ArrayList of type String of movie IDs from the MovieDatabase using the filterBy method before calculating those averages.
+* In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByYear that is similar to printAverageRatings, but also creates a YearAfterFilter and calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and came out in a specified year or later. Prints the number of movies found, and for each movie found, prints its rating, its year, and its title. 
+* I created a new class named GenreFilter that implements Filter. The constructor has one parameter named genre representing one genre, and the satisfies method returns true if a movie has this genre.
+* In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByGenre that creates a GenreFilter and call getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and include a specified genre. Prints the number of movies found, and for each movie, prints its rating and its title on one line, and its genres on the next line.
+* I created a new class named MinutesFilter that implements Filter. Its satisfies method returns true if a movie’s running time is at least min minutes and no more than max minutes.
+* In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByMinutes that creates a MinutesFilter and calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and their running time is at least a minimum number of minutes and no more than a maximum number of minutes. Prints the number of movies found, and for each movie print its rating, its running time, and its title on one line. 
+* I created a new class named DirectorsFilter that implements Filter. The constructor has one parameter named directors representing a list of directors separated by commas.
+* In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByDirectors that creates a DirectorsFilter and calsl getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and include at least one of the directors specified. Prints the number of movies found, and for each movie prints its rating and its title on one line, and all its directors on the next line.
+* In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByYearAfterAndGenre that creates an AllFilters object that includes criteria based on movies that came out in a specified year or later and have a specified genre as one of its genres. This method calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and the two criteria based on year and genre. Prints the number of movies found, and for each movie, prints its rating, its year, and its title on one line, and all its genres on the next line.
+* In the MovieRunnerWithFilters class, I created a void method named printAverageRatingsByDirectorsAndMinutes that creates an AllFilters object that includes criteria based on running time and directors. This method calls getAverageRatingsByFilter to get an ArrayList of type Rating of all the movies that have a specified number of minimal ratings and the two criteria based on minutes and directors. Prints the number of movies found, and for each movie, prints its rating, its time length, and its title on one line, and all its directors on the next line.
 
 #### Fourth Steps
 
