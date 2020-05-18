@@ -296,4 +296,23 @@ Specifically for this assignment I did the following: Created a new class named 
  
 ### UML diagrams
 
-![](/Images/UML1.png)
+![](Images/UML1.PNG)
+
+![](Images/UML2.jpeg)
+
+## To run this project
+
+First create the zip file following the instructions below. Then upload it at https://www.dukelearntoprogram.com//capstone/upload.php
+
+### Create the zip file
+
+This file should include ***FourthRatings***, ***RecommendationRunner***, any other supporting classes that you want to run (except the ones that duke already provided us with).
+
+## Example of an input:
+
+![](Images/Input.png)
+
+## Example of an input:
+
+![](Images/Output.png)
+
