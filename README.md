@@ -294,4 +294,6 @@ Specifically for this assignment I did the following: Created a new class named 
  
  In this step I created a new class named RecommendationRunner that implements Recommender, wrote the method getItemsToRate(). It returns a list of strings representing movie IDs that will be used to presentmovies to the user for the to rate, wrote the void method printRecommendationsFor(). It prints out an HTML table of movies recommended by the program for the user based on the movies rated. It has one parameter webRaterID, a string that is the ID of the user, who has been added by our code to the RaterDatabase with the ratings. To get the movies recommended, I use FourthRatings class.
  
+### UML diagrams
+
 
