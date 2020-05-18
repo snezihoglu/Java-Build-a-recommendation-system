@@ -3,8 +3,6 @@
 ### Title of the project
 *Movie Recommendation system*
 
-**Aim of the project:** To build a system that recommends movies according to their ratings.
-
 **Contact Person:** 
 
 Selma Nezihoglu
@@ -17,13 +15,9 @@ snezihoglu@gmail.com
 
 It is the project of Coursera's Java programming "Build a recommendation system" course.
 
-Here we are asked for building a capstone project by taking a look at the features of a recommender engine. I chose how to read in and organize user, ratings, and movie data in my program. 
+Here we are asked for building a capstone project by taking a look at the features of a recommender engine. 
 
-In this capstone, I wrote code to recommend movies based on different criteria, criteria based on user ratings of those movies.
-
-The person who runs the project will be able to make recommendations by filtering based on genre, or co-stars, or by any other criteria.
-
-I designed and wrote classes to implement a recommendation engine that makes recommendations along the lines we've just discussed. My program could make recommendations from many sources. Food, movies, books, or more. It just depends on the data that you read in.
+In this capstone, I wrote code to recommend movies based on different criteria, criteria based on user ratings of those movies. The person who runs the project will be able to make recommendations by filtering based on genre, or co-stars, or by any other criteria. I designed and wrote classes to implement a recommendation engine that makes recommendations along the lines.
 
 ### Let me give you a detailed description about what I did
 
