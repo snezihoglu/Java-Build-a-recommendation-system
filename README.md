@@ -3,7 +3,7 @@
 ### Title of the project
 *Movie Recommendation system*
 
-**Aim of the project:** To build a system that recommends movies according to their ratings, view time or user's interest.
+**Aim of the project:** To build a system that recommends movies according to their ratings.
 
 **Contact Person:** 
 
@@ -62,21 +62,21 @@ The class Movie is a Plain Old Java Object (POJO) class for storing the data abo
 
 Eight private variables to represent information about a movie including:
 
--id - a String variable representing the IMDB ID of the movie
+* id - a String variable representing the IMDB ID of the movie
 
--title - a String variable for the movie’s title
+* title - a String variable for the movie’s title
 
--year - an integer representing the year
+* year - an integer representing the year
 
--genres - one String of one or more genres separated by commas
+* genres - one String of one or more genres separated by commas
 
--director - one String of one or more directors of the movie separated by commas
+* director - one String of one or more directors of the movie separated by commas
 
--country - one String of one or more countries the film was made in, separated by commas
+* country - one String of one or more countries the film was made in, separated by commas
 
--minutes - an integer for the length of the movie
+* minutes - an integer for the length of the movie
 
--poster - a String that is a link to an image of the movie poster if one exists, or “N/A” if no poster exists
+* poster - a String that is a link to an image of the movie poster if one exists, or “N/A” if no poster exists
 
 A constructor with eight parameters to initialize the private variables.
 
