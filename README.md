@@ -51,23 +51,18 @@ The Rater.java class supports queries about ratings made by one rater, like what
 
 ***Movie.java***
 The class Movie is a Plain Old Java Object (POJO) class for storing the data about one movie. It includes the following items:
-
-Eight private variables to represent information about a movie including:
-
-* id - a String variable representing the IMDB ID of the movie
-* title - a String variable for the movie’s title
-* year - an integer representing the year
-* genres - one String of one or more genres separated by commas
-* director - one String of one or more directors of the movie separated by commas
-* country - one String of one or more countries the film was made in, separated by commas
-* minutes - an integer for the length of the movie
-* poster - a String that is a link to an image of the movie poster if one exists, or “N/A” if no poster exists 
-
-A constructor with eight parameters to initialize the private variables.
-
-Eight getter methods to return the private information such as the method getGenres that returns a String of all the genres for this movie.
-
-A toString method for representing movie information as a String so it can easily be printed.
+* Eight private variables to represent information about a movie including:
+   * id - a String variable representing the IMDB ID of the movie
+   * title - a String variable for the movie’s title
+   * year - an integer representing the year
+   * genres - one String of one or more genres separated by commas
+   * director - one String of one or more directors of the movie separated by commas
+   * country - one String of one or more countries the film was made in, separated by commas
+   * minutes - an integer for the length of the movie
+   * poster - a String that is a link to an image of the movie poster if one exists, or “N/A” if no poster exists 
+* A constructor with eight parameters to initialize the private variables.
+* Eight getter methods to return the private information such as the method getGenres that returns a String of all the genres for this movie.
+* A toString method for representing movie information as a String so it can easily be printed.
 
 ***Rating.java***
 
@@ -129,7 +124,7 @@ Specifically for this assignment I wrote the following classes and methods:
 
 In the SecondRatings class, I wrote a private helper method named getAverageByID that has two parameters: a String named id representing a movie ID and an integer named minimalRaters. This method returns a double representing the average movie rating for this ID if there are at least minimalRaters ratings. If there are not minimalRaters ratings, then it returns 0.0.
 
-In the SecondRatings class, I wrote a public method named getAverageRatings, which has one int parameter named minimalRaters. This method should find the average rating for every movie that has been rated by at least minimalRaters raters. Stores each such rating in a Rating object in which the movie ID and the average rating are used in creating the Rating object. The method getAverageRatings returns an ArrayList of all the Rating objects for movies that have at least the minimal number of raters supplying a rating.
+In the SecondRatings class, I wrote a public method named getAverageRatings, which has one int parameter named minimalRaters. This method finds the average rating for every movie that has been rated by at least minimalRaters raters. Stores each such rating in a Rating object in which the movie ID and the average rating are used in creating the Rating object. The method getAverageRatings returns an ArrayList of all the Rating objects for movies that have at least the minimal number of raters supplying a rating.
 
 In the SecondRatings class, I wrote a method named getTitle that has one String parameter named id, representing the ID of a movie. This method returns the title of the movie with that ID. If the movie ID does not exist, then this method should return a String indicating the ID was not found.
 
@@ -141,9 +136,9 @@ In the MovieRunnerAverage class, I wrote the void method getAverageRatingOneMovi
 
 #### Third Step
 
-In this part of the capstone, we are able to get just specific recommendations. At the same time, I made the code more efficient for accessing movie information and rating information about movies. I used a HashMap rather than an ArrayList. This allows my program to find a movie, given its ID immediately, rather than looping through an ArrayList. In making my program more general and more efficient I used Java interfaces.
+In this part of the capstone,  I made the code more efficient for accessing movie information and rating information about movies. I used a HashMap rather than an ArrayList. This allows my program to find a movie, given its ID immediately, rather than looping through an ArrayList. In making my program more general and more efficient I used Java interfaces.
 
-The first modification i did is to refactor the Rater.java class.
+The first modification i did was to refactor the Rater.java class.
 
 The first step in refactoring is to create an interface rather than a class.
 
