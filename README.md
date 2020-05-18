@@ -296,4 +296,4 @@ Specifically for this assignment I did the following: Created a new class named 
  
 ### UML diagrams
 
-
+![](/Images/UML1.png)
